@@ -1,0 +1,68 @@
+/* src/AnimatedEmojis.css */
+.emoji-container {
+    position: relative; /* Relative positioning for absolute child elements */
+    pointer-events: none; /* Prevent interaction */
+}
+
+.emoji {
+    font-size: 50px; /* Adjust size as needed */
+    margin: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation: bounce 1.5s infinite alternate; /* Bounce animation */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.delay-4 {
+    animation-delay: 0.4s;
+}
+
+.delay-5 {
+    animation-delay: 0.5s;
+}
+
+.delay-6 {
+    animation-delay: 0.8s;
+}
+
+.delay-7 {
+    animation-delay: 0.9s;
+}

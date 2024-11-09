@@ -1,0 +1,147 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1;
+}
+
+.title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.file-select-button {
+  background-color: #007BFF;
+  /* Blue background */
+  color: white;
+  /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+  /* Adjust font size if needed */
+  margin-bottom: 15px;
+  /* Add margin for spacing */
+}
+
+.file-select-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+}
+
+.record-button {
+  background-color: #007BFF;
+  /* Blue background */
+  color: white;
+  /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 15px;
+  /* Add margin for spacing */
+}
+
+.record-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+}
+
+.stop-button {
+  background-color: #FF5733;
+  /* Red background */
+  color: white;
+  /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.stop-button:hover {
+  background-color: #c0392b;
+  /* Darker red on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+}
+
+/* Emotion result styling */
+.emotion-result {
+  margin-top: 20px;
+  color: #007BFF;
+  /* Blue */
+  font-size: 1.5em;
+  /* Adjust size if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+  /* Smooth transition */
+}
+
+/* Animation classes */
+.hidden {
+  opacity: 0;
+  /* Invisible */
+}
+
+.visible {
+  opacity: 1;
+  /* Visible */
+}
+
+.audio-player {
+  margin-top: 20px;
+  color: #333;
+  /* Dark text for audio player */
+}
+
+.timer {
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+  /* Change color based on your design */
+  font-size: 1.2em;
+  /* Adjust size if necessary */
+}
